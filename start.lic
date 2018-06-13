@@ -1,9 +1,7 @@
 put "stand"
 waitrt?
 put "out"
-pause 1
 put "turn pin"
-pause 1
 start_script "col"
-pause 2
+wait_while{running?('col')}
 start_script "bigshot"

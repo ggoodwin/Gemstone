@@ -1,8 +1,9 @@
 waitrt?
+start_script "go2", [ "1194" ]
+wait_while{running?('go2')}
 put "turn pin"
-pause 1
 start_script "go2", [ "12364" ]
-pause 2
+wait_while{running?('go2')}
 put "go tess table"
 put "go tess table"
 pause 1
