@@ -1,0 +1,7 @@
+kill_script "bigshot"
+waitrt?
+put "stance def"
+pause 1
+put "Sign of Staunching"
+pause 1
+run

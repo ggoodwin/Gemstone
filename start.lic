@@ -1,0 +1,9 @@
+put "stand"
+waitrt?
+put "out"
+pause 1
+put "turn pin"
+pause 1
+start_script "col"
+pause 2
+start_script "bigshot"

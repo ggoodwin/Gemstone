@@ -1,0 +1,13 @@
+put "stand"
+waitrt?
+put "go tess table"
+put "go tess table"
+pause 1
+put "go zem table"
+put "go zem table"
+pause 1
+put "go yaba table"
+put "go yaba table"
+pause 1
+put "go table"
+put "sit"

@@ -1,0 +1,27 @@
+waitrt?
+put "turn pin"
+pause 1
+start_script "go2", [ "12364" ]
+pause 2
+put "go tess table"
+put "go tess table"
+pause 1
+put "go zem table"
+put "go zem table"
+pause 1
+put "go yaba table"
+put "go yaba table"
+pause 1
+#put "go dode table"
+#put "go dode table"
+#pause 1
+#put "go draik table"
+#put "go draik table"
+#pause 1
+#put "go aent table"
+#put "go aent table"
+#pause 1
+put "go table"
+pause 1
+put "sit"
+kill_script "bigshot"
