@@ -1,5 +1,14 @@
-put "stand"
+unless standing?
+	waitrt?
+	fput 'stand'
+end
 waitrt?
+
+start_script "go2", [ "table" ]
+wait_while{running?('go2')}
+put "go vel table"
+put "go vel table"
+pause 1
 put "go tess table"
 put "go tess table"
 pause 1

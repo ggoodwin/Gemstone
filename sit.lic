@@ -1,8 +1,15 @@
+unless standing?
+	waitrt?
+	fput 'stand'
+end
 waitrt?
+
 start_script "go2", [ "1194" ]
 wait_while{running?('go2')}
+pause 1
 put "turn pin"
-start_script "go2", [ "12364" ]
+pause 1
+start_script "go2", [ "table" ]
 wait_while{running?('go2')}
 put "go tess table"
 put "go tess table"
@@ -13,15 +20,6 @@ pause 1
 put "go yaba table"
 put "go yaba table"
 pause 1
-#put "go dode table"
-#put "go dode table"
-#pause 1
-#put "go draik table"
-#put "go draik table"
-#pause 1
-#put "go aent table"
-#put "go aent table"
-#pause 1
 put "go table"
 pause 1
 put "sit"
