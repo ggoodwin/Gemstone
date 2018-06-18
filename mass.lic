@@ -7,8 +7,7 @@ pause 4
 put "Incant 911 2"
 pause 4
 put "Incant 911"
-
-#pause 4
+pause 4
 #put "Prep 511"
 #pause 2
 #put "Cast velners"

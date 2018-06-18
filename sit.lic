@@ -7,20 +7,45 @@ waitrt?
 start_script "go2", [ "1194" ]
 wait_while{running?('go2')}
 pause 1
+
 put "turn pin"
 pause 1
+
 start_script "go2", [ "table" ]
 wait_while{running?('go2')}
-put "go tess table"
-put "go tess table"
 pause 1
-put "go zem table"
-put "go zem table"
+
+if checkname "Velners"
+	put "go table"
+	pause 1
+	put "sit"
+else
+	put "go Velners table"
+	put "go Velners table"
+	pause 1
+	put "go table"
+	pause 1
+	put "sit"
+end
 pause 1
-put "go yaba table"
-put "go yaba table"
-pause 1
-put "go table"
-pause 1
-put "sit"
+
 kill_script "bigshot"
+
+=begin
+	put "turn pin"
+	pause 1
+	put "go tess table"
+	put "go tess table"
+	pause 1
+	put "go zem table"
+	put "go zem table"
+	pause 1
+	put "go yaba table"
+	put "go yaba table"
+	put "go Yesoul table"
+	put "go Yesoul table"
+	pause 1
+	put "go table"
+	pause 1
+	put "sit"
+=end
