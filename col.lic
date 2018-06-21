@@ -1,6 +1,8 @@
-put "Sign of Swords"
-put "Sign of Shields"
-put "Sign of Smiting"
-put "Sign of Defending"
-put "Sign of Striking"
-put "Sign of Warding"
+if (checkmana >= 6)
+	put "Sign of Swords"
+	put "Sign of Shields"
+	put "Sign of Smiting"
+	put "Sign of Defending"
+	put "Sign of Striking"
+	put "Sign of Warding"
+end
