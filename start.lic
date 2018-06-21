@@ -14,4 +14,11 @@ end
 start_script "col"
 wait_while{running?('col')}
 
+pause 1
+put "get my statue"
+put "rub statue"
+pause 1
+put "stow statue"
+pause 1
+
 start_script "bigshot"
