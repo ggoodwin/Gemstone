@@ -1,0 +1,15 @@
+start_script "localsit"
+wait_while{running?('localsit')}
+pause 1
+
+start_script "waggle", [ "Velners" ]
+wait_while{running?('waggle')}
+pause 1
+
+if checkname "Tesserus"
+  start_script "mass"
+end
+pause 1
+
+wait_until { checkmana(maxmana) }
+put "quit"
