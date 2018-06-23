@@ -21,7 +21,4 @@ pause 1
 put "stow statue"
 pause 1
 
-start_script "bigshot"
-
-wait_until { checkmana(7) }
-start_script "rebuff"
+start_script "bigshot";
