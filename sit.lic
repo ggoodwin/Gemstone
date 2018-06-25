@@ -5,6 +5,7 @@ end
 waitrt?
 
 start_script "go2", [ "1194" ]
+#start_script "go2", [ "5716" ]
 wait_while{running?('go2')}
 pause 1
 
@@ -16,6 +17,12 @@ wait_while{running?('go2')}
 pause 1
 
 if checkname "Velners"
+	put "go zem table"
+	put "go zem table"
+	pause 1
+	put "go tes table"
+	put "go tes table"
+	pause 1
 	put "go table"
 	pause 1
 	put "sit"

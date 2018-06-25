@@ -7,6 +7,7 @@ waitrt?
 put "out"
 pause 1
 if (Room.current.id != 1194)
+#if (Room.current.id != 5716)
 	put "turn pin"
 	pause 1
 end
