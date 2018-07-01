@@ -62,5 +62,5 @@ else
 #	end
 	put "sit"
 end
-pause 1
+pause 60
 kill_script "bigshot"

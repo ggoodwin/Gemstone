@@ -2,5 +2,5 @@ pause_script "bigshot"
 waitrt?
 put "stance def"
 start_script "col"
-wait_while{running?('col2')}
+wait_while{running?('col')}
 unpause_script "bigshot"
