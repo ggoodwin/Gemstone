@@ -4,9 +4,9 @@ unless standing?
 end
 waitrt?
 
-start_script "go2", [ "table" ]
+#start_script "go2", [ "13256" ]
 #start_script "go2", [ "5716" ]
-wait_while{running?('go2')}
+#wait_while{running?('go2')}
 pause 1
 
 put "turn pin"
