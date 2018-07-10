@@ -4,7 +4,7 @@ unless standing?
 end
 waitrt?
 
-start_script "go2", [ "1194" ]
+start_script "go2", [ "table" ]
 #start_script "go2", [ "5716" ]
 wait_while{running?('go2')}
 pause 1
