@@ -6,8 +6,17 @@ start_script "heal", [ "Velners" ]
 wait_while{running?('heal.lic')}
 pause 1
 
+waitrt?
+
 start_script "healself"
 wait_while{running?('healself')}
+pause 1
+
+waitrt?
+
+kill_script "heal"
+start_script "heal", [ "Velners" ]
+wait_while{running?('heal.lic')}
 pause 1
 
 waitrt?
@@ -16,13 +25,7 @@ start_script "healself"
 wait_while{running?('healself')}
 pause 1
 
-start_script "heal", [ "Velners" ]
-wait_while{running?('heal.lic')}
-pause 1
-
-start_script "healself"
-wait_while{running?('healself')}
-pause 1
+waitrt?
 
 wait_until { checkmana(maxmana) }
 put "quit"
