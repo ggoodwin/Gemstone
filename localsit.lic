@@ -7,12 +7,12 @@ waitrt?
 start_script "go2", [ "table" ]
 wait_while{running?('go2')}
 if checkname "Velners"
-	put "go Zeminar table"
-	put "go Zeminar table"
+	put "go table"
+	put "sit"
 else
 	put "go Velners table"
 	put "go Velners table"
+	pause 1
+	put "go table"
+	put "sit"
 end
-pause 1
-put "go table"
-put "sit"

@@ -12,54 +12,18 @@ pause 1
 put "turn pin"
 pause 1
 
-start_script "go2", [ "12364" ]
+start_script "go2", [ "17600" ]
 wait_while{running?('go2')}
 pause 1
 
-#if get = "[go2: error: failed to find a path between your current room (1194) and destination room (12364)]"
-#	put "turn pin"
-#	pause 1
-#	start_script "go2", [ "12364" ]
-#	wait_while{running?('go2')}
-#	pause 1
-#end
-
 if checkname "Velners"
-	put "go zem table"
-	put "go zem table"
-	pause 1
-	put "go tes table"
-	put "go tes table"
-	pause 1
 	put "go table"
-#	if get = "It seems as though all the tables here are occupied.  You can look at the tables to see who's sitting at what table, or you can GO to a specific table to visit with its occupants."
-#		start_script "go2", [ "17600" ]
-#		wait_while{running?('go2')}
-#		put "go zem table"
-#		put "go zem table"
-#		pause 1
-#		put "go tes table"
-#		put "go tes table"
-#		pause 1
-#		put "go table"
-#	end
 	put "sit"
 else
 	put "go Velners table"
 	put "go Velners table"
 	pause 1
 	put "go table"
-	pause 1
-
-#	if get = "It seems as though all the tables here are occupied.  You can look at the tables to see who's sitting at what table, or you can GO to a specific table to visit with its occupants."
-#		start_script "go2", [ "17600" ]
-#		wait_while{running?('go2')}
-#		pause 1
-#		put "go Velners table"
-#		put "go Velners table"
-#		pause 1
-#		put "go table"
-#	end
 	put "sit"
 end
 pause 1
